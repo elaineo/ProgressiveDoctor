@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+  <RelativeLayout 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" >	
+  		<!--  Header  Starts-->
+  		<LinearLayout android:id="@+id/header"
+  				android:layout_width="fill_parent"
+  				android:layout_height="wrap_content"
+  				android:paddingTop="5dip"
+  				android:paddingBottom="5dip">
+  				<!-- Logo Start-->
+  				<ImageView android:src="@drawable/doctorb"
+  				    		android:contentDescription="@string/imgLogoDesc"
+  							android:layout_width="wrap_content"
+  							android:layout_height="wrap_content"/>
+  				<!-- Logo Ends -->
+  		</LinearLayout>
+  		<!--  Header Ends -->  
+  		
+  		<!-- Search Form -->
+		<LinearLayout
+		  android:orientation="vertical"
+		  android:layout_width="match_parent"
+		  android:layout_height="wrap_content"
+		  android:padding="10dip"
+		  android:layout_below="@id/header" >
+		  <!--  Input Terms Label -->
+  		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#372c24"
+		  		android:text="@string/head_search"
+		  		android:textSize="24sp" />
+		  <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#372c24"
+		  		android:text="@string/label_terms"/>
+		  <EditText android:id="@+id/MainSearch" 
+		        android:inputType="text"  
+		        android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="5dip"
+		  		android:layout_marginBottom="20dip"
+		  		android:singleLine="true"/>
+		  <!-- Search button -->	
+		  <Button android:id="@+id/btnSearch" 
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:layout_marginTop="10dip"
+		  		android:text="@string/label_search"/>
+		    <TextView android:layout_width="fill_parent"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#372c24"
+		  		android:text="@string/label_warn"
+		  		android:paddingLeft="10dip"
+		  		android:paddingRight="10dip"/>
+		</LinearLayout>
+  		<!-- Search Form Ends --> 		
+  		
+  </RelativeLayout>
+</ScrollView>

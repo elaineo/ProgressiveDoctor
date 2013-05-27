@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">	
+  		<!--  Header  Starts-->
+  		<LinearLayout android:id="@+id/header"
+  				android:layout_width="fill_parent"
+  				android:layout_height="wrap_content"
+  				android:paddingTop="5dip"
+  				android:paddingBottom="5dip">
+  				<!-- Logo Start-->
+  				<ImageView android:src="@drawable/doctorb"
+  				    		android:contentDescription="@string/imgLogoDesc"
+  							android:layout_width="wrap_content"
+  							android:layout_height="wrap_content"/>
+  				<!-- Logo Ends -->
+  		</LinearLayout>
+  		<!--  Header Ends -->  
+	<LinearLayout android:id="@+id/tbl_head" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="5dp" 
+	    android:layout_below="@id/header">
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="8"
+	        android:text="@string/label_treat"
+	        android:textSize="20sp" >
+	    </TextView>
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="right"
+	        android:text="@string/label_min"
+	        android:textSize="18sp" >
+	    </TextView>
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="right"
+  	        android:text="@string/label_max"
+	        android:textSize="18sp" >
+	    </TextView>
+    </LinearLayout>
+		<ListView
+		  android:id="@+id/listrview"
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent" 
+		  android:layout_below="@id/tbl_head" />
+	  <Button android:id="@+id/btnOk" 
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_marginBottom="10dip"
+  		android:text="@string/label_ok"
+  		android:layout_alignParentBottom="true"
+		android:gravity="bottom"/>
+  </RelativeLayout> 

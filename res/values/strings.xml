@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The Progressive Doctor</string>
+    <string name="label_search">Search</string>
+    <string name="head_search">Search for ailments</string>
+    <string name="label_terms">Please enter a few words describing the chief complaint (NOT the treatment)</string>
+    <string name="label_warn">The database is pretty stupid, so you have to search using medical terminology. For example, it won\'t understand \"broken arm\" or \"flu\". Use \"humerus fracture\" or \"leprosy\" or whatever seems to be troubling you today.</string>
+    
+    <string name="imgLogoDesc">Logo Image</string>
+    <string name="about">About</string>
+    <string name="about_text"> 
+        To give people a better sense of how much hospitals are ripping them off, I made a searchable database of what Medicare actually paid for different types of medical treatments. 	
+        </string>
+    <string name="copy_text">Copyright 2013 E Ou. Data collected from cms.gov         	
+        </string>
+    <string name="label_ok">Okay.</string>
+    <string name="label_treat">Action Taken</string>
+    <string name="label_min">Min</string>
+    <string name="label_max">Max</string>
+</resources>
